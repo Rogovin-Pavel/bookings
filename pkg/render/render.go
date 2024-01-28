@@ -1,8 +1,8 @@
 package render
 
 import (
-	"bookings/pkg/config"
-	"bookings/pkg/models"
+	"github.com/Rogovin-Pavel/bookings/pkg/config"
+	"github.com/Rogovin-Pavel/bookings/pkg/models"
 	"bytes"
 	"html/template"
 	"log"

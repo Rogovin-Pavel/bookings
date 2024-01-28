@@ -1,9 +1,10 @@
 package main
 
 import (
-	"bookings/pkg/config"
-	"bookings/pkg/handlers"
 	"net/http"
+
+	"github.com/Rogovin-Pavel/bookings/pkg/config"
+	"github.com/Rogovin-Pavel/bookings/pkg/handlers"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/v5/middleware"

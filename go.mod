@@ -1,4 +1,4 @@
-module bookings
+module github.com/Rogovin-Pavel/bookings
 
 go 1.21.6
 

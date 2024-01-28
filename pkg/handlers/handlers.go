@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"bookings/pkg/config"
-	"bookings/pkg/models"
-	"bookings/pkg/render"
 	"net/http"
+
+	"github.com/Rogovin-Pavel/bookings/pkg/config"
+	"github.com/Rogovin-Pavel/bookings/pkg/models"
+	"github.com/Rogovin-Pavel/bookings/pkg/render"
 )
 
 // repository used by the handlers
