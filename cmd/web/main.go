@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/Rogovin-Pavel/bookings/pkg/config"
-	"github.com/Rogovin-Pavel/bookings/pkg/handlers"
-	"github.com/Rogovin-Pavel/bookings/pkg/render"
+	"github.com/Rogovin-Pavel/bookings/internal/config"
+	"github.com/Rogovin-Pavel/bookings/internal/handlers"
+	"github.com/Rogovin-Pavel/bookings/internal/render"
 
 	"log"
 	"net/http"
