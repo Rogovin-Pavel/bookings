@@ -3,11 +3,13 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Rogovin-Pavel/bookings/internal/config"
-	"github.com/Rogovin-Pavel/bookings/internal/models"
-	"github.com/Rogovin-Pavel/bookings/internal/render"
 	"log"
 	"net/http"
+
+	"github.com/Rogovin-Pavel/bookings/internal/config"
+	"github.com/Rogovin-Pavel/bookings/internal/forms"
+	"github.com/Rogovin-Pavel/bookings/internal/models"
+	"github.com/Rogovin-Pavel/bookings/internal/render"
 )
 
 // Repo the repository used by the handlers
@@ -55,7 +57,14 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 // Reservation renders the make a reservation page and displays form
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{
+		Form: forms.New(nil),
+	})
+}
+
+// PostReservation handles the posting of a reservation form
+func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // Generals renders the room page
