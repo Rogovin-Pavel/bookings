@@ -3,13 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-
+	"github.com/Rogovin-Pavel/bookings/internal/config"
+	"github.com/Rogovin-Pavel/bookings/internal/models"
+	"github.com/Rogovin-Pavel/bookings/internal/render"
 	"log"
 	"net/http"
-
-	"github.com/Rogovin-Pavel/bookings/pkg/config"
-	"github.com/Rogovin-Pavel/bookings/pkg/models"
-	"github.com/Rogovin-Pavel/bookings/pkg/render"
 )
 
 // Repo the repository used by the handlers
@@ -99,8 +97,6 @@ func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-
-	log.Println(string(out))
 
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(out)
