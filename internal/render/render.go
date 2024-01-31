@@ -4,14 +4,14 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/Rogovin-Pavel/bookings/internal/config"
-	"github.com/Rogovin-Pavel/bookings/internal/models"
-	"github.com/justinas/nosurf"
-
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
+
+	"github.com/Rogovin-Pavel/bookings/internal/config"
+	"github.com/Rogovin-Pavel/bookings/internal/models"
+	"github.com/justinas/nosurf"
 )
 
 var functions = template.FuncMap{}
